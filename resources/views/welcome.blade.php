@@ -31,8 +31,6 @@
                                 fill="currentColor" />
                         </svg>
                     </div>
-                    @if (Route::has('login'))
-                    @endif
                 </header>
 
                 <main class="mt-6">
