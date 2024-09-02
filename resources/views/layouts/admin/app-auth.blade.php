@@ -18,9 +18,10 @@
 
 <body>
     <script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
-    <div>
-        {{ $slot }}
-    </div>
+
+    {{ $slot }}
+
+    @include('sweetalert::alert')
     @livewireScripts
 </body>
 

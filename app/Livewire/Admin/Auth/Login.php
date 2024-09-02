@@ -20,6 +20,7 @@ class Login extends Component
         $this->validate();
 
         if (Auth::guard('admin')->attempt(['email' => $this->email, 'password' => $this->password])) {
+            toast('Login Successfully', 'success')->timerProgressBar();
             return redirect('/admin/dashboard');
         } else {
             session()->flash('error', 'Email atau password salah.');

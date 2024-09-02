@@ -18,10 +18,9 @@
 <body>
     <script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
 
-    <div>
-        {{ $slot }}
-    </div>
+    {{ $slot }}
 
+    @include('sweetalert::alert')
     @livewireScripts
     <script src="{{ asset('assets/static/js/components/dark.js') }}"></script>
     <script src="{{ asset('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>

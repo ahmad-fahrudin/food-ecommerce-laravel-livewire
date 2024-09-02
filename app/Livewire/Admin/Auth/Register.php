@@ -31,7 +31,7 @@ class Register extends Component
         ]);
 
         Auth::login($user);
-
+        toast('Register Successfully', 'success')->timerProgressBar();
         return redirect('/admin/dashboard');
     }
     public function render()
